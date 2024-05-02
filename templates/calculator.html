@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>SOAP CLIENT PYTHON</title>
+</head>
+<body>
+   <form method="post">
+      <input type="number" name="num1" required>
+      <input type="number" name="num2" required>
+      <select name="operator" required>
+         <option value="" disabled selected></option>
+         <option value="add">Add</option>
+         <option value="subtract">Subtract</option>
+      </select>
+      <button type="submit">Submit</button>
+   </form>
+
+   {% if result %}
+   <script>
+      alert('{{ result }}')
+   </script>
+   {% endif %}
+   {% if error %}
+   <script>
+      alert('{{ error }}')
+   </script>
+   {% endif %}
+</body>
+</html>
